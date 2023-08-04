@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <form class="input-div">
+
+                <input type="text" id="country_input" class="input">
+               <button id="search-btn" type="submit"><img src="image/search.png" alt=""></button> 
+            </form>
+            <h3 id="city-text" class="city"></h3><span id="country"></span>
+            <img src="" alt="">
+            <h2 id="temp-text"></h2>
+            <img src="" alt="" id="image">
+            <p id="description"></p>
+
+            <div class="info">
+                <span class="mintemp-group span">
+                    <img src="image/minTemp.png" alt="">
+                    <b class="mintemp-text span-text">Min-temp:<span id="tempmin"></span></b>
+                   </span>
+                <span class="maxtemp-group span">
+                    <img src="image/maxTemp.png" alt="">
+                 <b class="maxtemp-text span-text">Max-temp:<span id="tempmax"></span></b>
+                </span>
+                <span class="pressure-group span">
+                    <img src="image/pressure.png" alt="">
+                    <b class="pressure-text span-text">Pressure:<span id="pressure"></span></b>
+                   </span>
+                <span class="humidity-group span">
+                    <img src="image/humidity.png" alt="">
+                    <b class="humidity-text span-text">Humidity:<span id="humid"></span></b>
+                   </span>
+                   <span class="sealevel-group span">
+                       <img src="image/sealevel.png" alt="">
+                    <b class="sealevel-text span-text">Sea Level:<span id="sl"></span></b>
+                   </span>
+                   <span class="windSpeed span">
+                       <img src="image/windSpeed.png" alt="">
+                    <b class="windSpeed span-text">Wind Speed:<span id="wind"></span></b>
+                   </span>
+            </div>
+        </div>
+           <div class="bg-video">
+            <video class="bg-video-content" autoplay muted loop>
+                <source src="image/vid.mp4" type="video/mp4" />
+                Your browser is not supported!
+            </video>
+           </div>
+           
+       
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>

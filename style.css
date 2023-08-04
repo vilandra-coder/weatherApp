@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(16, 26, 72, 0.795);
+    color: rgb(16, 26, 72);
+}
+.container{
+    background-image: linear-gradient(to top rgba(16, 26, 72, 0.449), rgba(16, 26, 72, 0.115));
+    margin-top: 2rem 0;
+    width: 50vw;
+    padding: 2rem 2rem;
+    height: 70rem;
+    position: relative;
+    border-radius: 2rem;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 90vw;
+    z-index: -1;
+  
+}
+.main{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1.5rem;
+}
+.input{
+    background-color: rgba(16, 26, 72, 0.107);
+    border: none;
+    outline: 1px solid transparent;
+    padding: 1rem 1rem;
+    color: #fff;
+    /* width: 60%; */
+    width: 100%;
+    height: 3rem;
+}
+#search-btn{
+   background-color: rgba(16, 26, 72, 0.468);
+   border: none;
+   border-left: 1px solid rgb(10, 19, 61);
+   padding: .151rem .8rem;
+   cursor: pointer;
+}
+.input-div{
+    /* padding: .8rem 1rem; */
+    display: flex;
+    align-items: center;
+    background-color: rgba(16, 26, 72, 0.825);
+}
+#search-btn > img{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+.city{
+    font-size: 2rem;
+}
+#country{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+#temp-text{
+    color: #fff;
+    font-size: 5rem;
+}
+#description{
+    font-size: 1.5rem;
+}
+.info{
+    background-color: rgba(16, 26, 72, 0.468);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-radius: .7rem;
+    margin: 0 1rem;
+    height: 20rem;
+}
+.span{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+.span-text > span{
+    font-size: 1.2rem;
+    color: rgb(186, 96, 7);
+    /* color: rgb(48, 153, 251); */
+
+}
+#humid{
+    font-size: 1.4rem;
+}
+.span > img{
+    width: 2.4rem;
+    height: 2.4rem;
+    filter: opacity(1) drop-shadow(0 0 white);
+}
+
+@media (max-width: 722px) and (min-width: 360px){
+    .container{
+          width: 85vw;
+          height: 80rem;
+          padding-top: 1rem;
+    }
+    .input{
+         width: 100%;
+    }
+    .span-text{
+        font-size: 1.4rem;
+    }
+    .info{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
